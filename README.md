@@ -146,6 +146,10 @@ https://zenodo.org/records/19685421
 
 The Zenodo archive provides a persistent record of the software and associated metadata.
 
+## Data
+
+Some data files included or referenced in this repository originate from third-party public data sources. Such data remain subject to the terms and conditions of their original providers and are not necessarily covered by the MIT License applicable to the software in this repository.
+
 ## License
 
 The code in this repository is released under the **MIT License**.
