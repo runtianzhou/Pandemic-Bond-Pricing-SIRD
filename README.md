@@ -128,12 +128,10 @@ If you use this code in academic work, please cite:
 
 ## Archived Version
 
-An archived version of this research software is available through Zenodo:
+The software is archived on Zenodo.
 
-https://zenodo.org/records/19685421
-
-The Zenodo record provides a persistent archival version of the software and its metadata.
-
+- Current release (`v3.0.0`): https://doi.org/10.5281/zenodo.22262198
+- All versions / Concept DOI: https://doi.org/10.5281/zenodo.19615082
 ## Data
 
 Some data files included in or referenced by this repository originate from third-party public data sources.
