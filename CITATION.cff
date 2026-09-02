@@ -1,18 +1,18 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite the associated manuscript and the archived software release."
+message: "If you use this software, please cite this software and the associated manuscript."
 title: "Code for Pandemic Bond Pricing under Stochastic SIRD Modelling"
 type: software
+
 authors:
   - family-names: Zhou
     given-names: Runtian
-  - family-names: Wolkowicz
-    given-names: Gail S. K.
-  - family-names: Pirvu
-    given-names: Traian A.
+
 repository-code: "https://github.com/runtianzhou/Bond_Pricing_LGE_SIRD"
 url: "https://github.com/runtianzhou/Bond_Pricing_LGE_SIRD"
+
 license: MIT
 date-released: 2026-09-03
+
 keywords:
   - pandemic bond
   - catastrophe bond
@@ -23,3 +23,15 @@ keywords:
   - Euler-Maruyama method
   - Monte Carlo simulation
   - PRCC sensitivity analysis
+
+preferred-citation:
+  type: article
+  title: "Pandemic Bond Pricing under Stochastic SIRD Modelling"
+  authors:
+    - family-names: Zhou
+      given-names: Runtian
+    - family-names: Wolkowicz
+      given-names: Gail S. K.
+    - family-names: Pirvu
+      given-names: Traian A.
+  year: 2026
