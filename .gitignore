@@ -1,15 +1,21 @@
+# R history and workspace
 .Rhistory
 .RData
 .Ruserdata
+
+# RStudio
 .Rproj.user/
 *.Rproj
-.Rcheck/
-*.tar.gz
+
+# macOS
 .DS_Store
+
+# Temporary files
 *.tmp
 *.bak
 *~
 
+# renv local libraries
 renv/library/
 renv/staging/
 renv/local/
