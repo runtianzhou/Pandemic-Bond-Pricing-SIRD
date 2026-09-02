@@ -6,52 +6,37 @@ This repository contains the R code supporting the preprint
 
 by **Runtian Zhou, Gail S. K. Wolkowicz, and Traian A. Pirvu**.
 
-The manuscript has been submitted for journal publication.
+The manuscript is currently a preprint and has been submitted for journal publication.
+
+> **Software implementation and repository:** Runtian Zhou
 
 ## Overview
 
 This project develops a pandemic bond pricing framework based on a stochastic SIRD epidemic model in which the disease transmission rate is modelled by a mean-reverting Ornstein–Uhlenbeck (OU) process.
 
-The repository contains the R code used to generate the numerical results, tables, figures, and sensitivity analyses reported in the manuscript.
+The repository contains the computational implementation used to generate the numerical results, tables, figures, and sensitivity analyses reported in the manuscript.
 
-The code includes:
+The main components of the analysis include:
 
-- reproduction of benchmark stochastic logistic growth model results;
-- implementation of the stochastic SIRD–OU framework;
-- recursive pandemic bond pricing;
-- numerical simulation of the stochastic epidemic model;
+- reproduction of benchmark results based on the stochastic logistic growth epidemic model;
+- implementation of the stochastic SIRD–OU epidemic framework;
+- recursive valuation of pandemic bond cash flows;
+- numerical simulation of stochastic epidemic trajectories;
 - Monte Carlo estimation of pandemic bond prices and trigger probabilities;
 - sensitivity analysis, including partial rank correlation coefficient (PRCC) analysis; and
-- generation of the tables and figures reported in the manuscript.
+- generation of the numerical tables and figures reported in the manuscript.
 
 ## Repository Structure
 
-The main R scripts are located in the:
+The main computational files are contained in the `R/` directory.
 
-`Bond_Price_LGE_SIRD_Github`
-
-folder.
-
-The scripts contain the computational implementation for the benchmark stochastic logistic growth model and the proposed stochastic SIRD–OU pandemic bond pricing framework.
-
-## Reproducibility
-
-The code in this repository is intended to support the reproducibility of the computational results reported in the associated manuscript.
-
-The primary programming language is **R**.
-
-## Associated Manuscript
-
-**Zhou, R., Wolkowicz, G. S. K., and Pirvu, T. A.**  
-*Pandemic Bond Pricing under Stochastic SIRD Modelling.*  
-Preprint, 2026. Submitted for journal publication.
-
-## Archived Version
-
-An archived version of this research code is available on Zenodo:
-
-https://zenodo.org/records/19685421
-
-## Keywords
-
-Pandemic bond; catastrophe bond; recursive pandemic bond pricing; stochastic SIRD model; Ornstein–Uhlenbeck process; stochastic differential equations; Euler–Maruyama method; Monte Carlo simulation; PRCC sensitivity analysis.
+```text
+Pandemic-Bond-Pricing-SIRD/
+├── R/                  # R scripts, data inputs, and intermediate computational objects
+├── renv/               # renv activation and project settings
+├── .Rprofile           # activates the project-specific R environment
+├── .gitignore
+├── CITATION.cff        # citation metadata
+├── LICENSE             # MIT License
+├── README.md
+└── renv.lock           # R package versions used in the project
