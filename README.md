@@ -40,3 +40,118 @@ Pandemic-Bond-Pricing-SIRD/
 ├── LICENSE             # MIT License
 ├── README.md
 └── renv.lock           # R package versions used in the project
+```
+
+The `R/` directory contains the computational material for the benchmark stochastic logistic growth model, the stochastic SIRD–OU framework, pandemic-trigger calculations, pandemic bond valuation, numerical experiments, figures, tables, and sensitivity analysis.
+
+## Reproducibility
+
+This repository uses [`renv`](https://rstudio.github.io/renv/) to record the R package environment used for the computational analysis.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/runtianzhou/Pandemic-Bond-Pricing-SIRD.git
+cd Pandemic-Bond-Pricing-SIRD
+```
+
+### 2. Restore the R environment
+
+Open R or RStudio in the repository directory and run:
+
+```r
+install.packages("renv")
+renv::restore()
+```
+
+This restores the package versions recorded in `renv.lock`.
+
+### 3. Run the analysis
+
+The analysis files are located in:
+
+```text
+R/
+```
+
+The scripts cover the principal computational components of the manuscript, including:
+
+- benchmark stochastic logistic growth calculations;
+- stochastic SIRD–OU simulations;
+- epidemic-trigger calculations;
+- recursive pandemic bond pricing;
+- numerical tables and figures; and
+- PRCC sensitivity analysis.
+
+Because several scripts correspond to specific numerical experiments and manuscript outputs, users should consult the script names and comments within the `R/` directory when reproducing individual results.
+
+## Methodological Components
+
+### Stochastic SIRD–OU Epidemic Model
+
+The proposed epidemic framework is based on a stochastic SIRD model in which the disease transmission rate evolves according to a mean-reverting Ornstein–Uhlenbeck process.
+
+The stochastic specification is intended to incorporate time-varying uncertainty in disease transmission while retaining the compartmental structure of the SIRD model.
+
+### Pandemic Bond Pricing
+
+Simulated epidemic trajectories are incorporated into a recursive pandemic bond pricing framework.
+
+Pandemic-dependent trigger conditions affect future bond cash flows, allowing epidemic dynamics and financial valuation to be considered jointly.
+
+### Numerical Simulation
+
+The stochastic epidemic system is simulated numerically using Euler–Maruyama-type methods, with particular attention to the positivity requirements of epidemiological state variables.
+
+### Monte Carlo Analysis
+
+Monte Carlo simulation is used to evaluate stochastic epidemic paths, trigger events, and pandemic bond values under parameter uncertainty.
+
+### Sensitivity Analysis
+
+Parameter sensitivity is investigated using partial rank correlation coefficients (PRCC), allowing the relative influence of epidemiological and stochastic parameters on model outputs and pandemic bond values to be assessed.
+
+## Associated Manuscript
+
+**Zhou, R., Wolkowicz, G. S. K., and Pirvu, T. A.**  
+*Pandemic Bond Pricing under Stochastic SIRD Modelling.*  
+Preprint, 2026. Submitted for journal publication.
+
+The manuscript provides the mathematical formulation, theoretical development, pandemic bond pricing framework, numerical methodology, and interpretation of the computational results implemented in this repository.
+
+## Software Authorship
+
+The R implementation, computational repository, and software organization were developed and are maintained by:
+
+**Runtian Zhou**
+
+The authorship of the associated manuscript is separate from the authorship of the software implementation.
+
+## Citation
+
+Citation metadata for the software are provided in [`CITATION.cff`](CITATION.cff).
+
+GitHub also provides a **Cite this repository** option in the repository sidebar.
+
+If you use the code in academic work, please cite:
+
+1. the archived software release; and
+2. the associated manuscript.
+
+## Archived Version
+
+An archived version of this research software is available through Zenodo:
+
+https://zenodo.org/records/19685421
+
+The Zenodo archive provides a persistent record of the software and associated metadata.
+
+## License
+
+The code in this repository is released under the **MIT License**.
+
+See [`LICENSE`](LICENSE) for the full license terms.
+
+## Keywords
+
+Pandemic bond · Catastrophe bond · Recursive pandemic bond pricing · Stochastic SIRD model · Ornstein–Uhlenbeck process · Stochastic differential equations · Euler–Maruyama method · Monte Carlo simulation · PRCC sensitivity analysis
