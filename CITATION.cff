@@ -4,6 +4,7 @@ title: "Code for Pandemic Bond Pricing under Stochastic SIRD Modelling"
 type: software
 version: 3.0.0
 date-released: 2026-09-03
+doi: "10.5281/zenodo.22262198"
 
 authors:
   - family-names: Zhou
