@@ -1,7 +1,9 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite this software and the associated manuscript."
+message: "If you use this software, please cite the archived software release and the associated manuscript."
 title: "Code for Pandemic Bond Pricing under Stochastic SIRD Modelling"
 type: software
+version: 3.0.0
+date-released: 2026-09-03
 
 authors:
   - family-names: Zhou
@@ -11,12 +13,11 @@ repository-code: "https://github.com/runtianzhou/Pandemic-Bond-Pricing-SIRD"
 url: "https://github.com/runtianzhou/Pandemic-Bond-Pricing-SIRD"
 
 license: MIT
-date-released: 2026-09-03
 
 keywords:
   - pandemic bond
   - catastrophe bond
-  - bond pricing
+  - recursive pandemic bond pricing
   - stochastic SIRD model
   - Ornstein-Uhlenbeck process
   - stochastic differential equations
