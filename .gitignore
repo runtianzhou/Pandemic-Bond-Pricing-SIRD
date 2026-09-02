@@ -1,0 +1,15 @@
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rproj
+.Rcheck/
+*.tar.gz
+.DS_Store
+*.tmp
+*.bak
+*~
+
+renv/library/
+renv/staging/
+renv/local/
